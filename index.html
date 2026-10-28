@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>嘉的个人主页</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #2c2c2a;
+      --muted: #5f5e5a;
+      --accent: #185fa5;
+      --accent-light: #e6f1fb;
+      --border: rgba(0, 0, 0, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+    header { text-align: center; margin-bottom: 40px; }
+    .avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; margin: 0 auto 16px;
+    }
+    h1 { font-size: 28px; font-weight: 500; }
+    .subtitle { color: var(--muted); font-size: 15px; margin-top: 6px; }
+    .cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 24px;
+    }
+    .card h2 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--muted); }
+    .tag {
+      display: inline-block; background: var(--accent-light); color: var(--accent);
+      font-size: 12px; padding: 3px 10px; border-radius: 999px; margin: 4px 4px 0 0;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">嘉</div>
+      <h1>你好，我是嘉</h1>
+      <p class="subtitle">这是我的第一个网站 · 从零开始学部署</p>
+    </header>
+
+    <div class="cards">
+      <div class="card">
+        <h2>关于我</h2>
+        <p>住在合肥，喜欢用自然语言直接下指令，正在一点点学会「把自己的东西放到网上去」。</p>
+      </div>
+      <div class="card">
+        <h2>我正在做</h2>
+        <p>学习 Git、折腾 SwiftUI 小应用，以及——把这个网站部署上线。</p>
+        <span class="tag">Git</span>
+        <span class="tag">SwiftUI</span>
+        <span class="tag">部署</span>
+      </div>
+      <div class="card">
+        <h2>联系我</h2>
+        <p>邮箱：<a href="mailto:siweijia123@qq.com">siweijia123@qq.com</a></p>
+      </div>
+    </div>
+
+    <footer>由 嘉 用 HTML 手写 · 部署于云端</footer>
+  </div>
+</body>
+</html>
